@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media-queries</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        background: yellow;
+      }
+      div {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      }
+      .one {
+        color: red;
+        text-transform: capitalize;
+      }
+      @media screen and (min-width: 576px) {
+        body {
+          background: rgb(30, 0, 255);
+        }
+        .one {
+          color: rgb(255, 128, 0);
+          text-transform: capitalize;
+        }
+        @media screen and (min-width: 800px) {
+          body {
+            background: rgb(255, 0, 251);
+          }
+          .one {
+            color: rgb(255, 238, 0);
+            text-transform: capitalize;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">
+      <h1>I'm Heading one</h1>
+      <h2>I'm Heading two</h2>
+    </div>
+  </body>
+</html>

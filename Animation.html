@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      * {
+        margin: 7px;
+        padding: 7px;
+        box-sizing: border-box;
+      }
+      div {
+        width: 150px;
+        height: 150px;
+      }
+      .one {
+        background: rgb(0, 213, 213);
+        animation: vishnu1 5s infinite;
+      }
+      .two {
+        background: rgb(2, 152, 152);
+        animation: vishnu2 5s infinite;
+      }
+      .three {
+        background: rgb(2, 108, 170);
+        animation: vishnu3 5s infinite;
+      }
+      .four {
+        background: rgb(2, 151, 126);
+        animation: vishnu4 5s infinite;
+      }
+      .five {
+        background: rgb(0, 162, 130);
+        animation: vishnu5 5s infinite;
+      }
+      @keyframes vishnu1 {
+        0% {
+          transform: translate(200px);
+          background: rgb(0, 61, 159);
+        }
+        25% {
+          transform: rotate(22deg);
+          background-color: lightseagreen;
+        }
+        50% {
+          transform: skew(50deg);
+          background-color: cyan;
+        }
+        75% {
+          transform: scale(25px);
+          background-color: darkturquoise;
+        }
+        100% {
+          transform: translate(300px);
+          background-color: deepskyblue;
+        }
+      }
+      @keyframes vishnu2 {
+        0% {
+          transform: translate(200px);
+          background: rgb(0, 67, 68);
+        }
+        25% {
+          transform: rotate(22deg);
+          background-color: rgb(3, 102, 97);
+        }
+        50% {
+          transform: skew(50deg);
+          background-color: rgb(5, 169, 169);
+        }
+        75% {
+          transform: scale(25px);
+          background-color: rgb(3, 111, 80);
+        }
+        100% {
+          transform: translate(300px);
+          background-color: rgb(251, 155, 2);
+        }
+      }
+      @keyframes vishnu3 {
+        0% {
+          transform: translate(200px);
+          background: rgb(119, 10, 244);
+        }
+        25% {
+          transform: rotate(22deg);
+          background-color: rgb(134, 32, 178);
+        }
+        50% {
+          transform: skew(50deg);
+          background-color: rgb(230, 0, 255);
+        }
+        75% {
+          transform: scale(25px);
+          background-color: rgb(209, 0, 136);
+        }
+        100% {
+          transform: translate(300px);
+          background-color: rgb(255, 0, 166);
+        }
+      }
+      @keyframes vishnu4 {
+        0% {
+          transform: translate(200px);
+          background: rgb(0, 61, 159);
+        }
+        25% {
+          transform: rotate(22deg);
+          background-color: rgb(47, 0, 203);
+        }
+        50% {
+          transform: skew(50deg);
+          background-color: rgb(0, 44, 98);
+        }
+        75% {
+          transform: scale(25px);
+          background-color: rgb(1, 50, 56);
+        }
+        100% {
+          transform: translate(300px);
+          background-color: rgb(0, 97, 130);
+        }
+      }
+      @keyframes vishnu5 {
+        0% {
+          transform: translate(200px);
+          background: hsl(335, 100%, 40%);
+        }
+        25% {
+          transform: rotate(22deg);
+          background-color: rgb(246, 8, 80);
+        }
+        50% {
+          transform: skew(50deg);
+          background-color: rgb(255, 64, 0);
+        }
+        75% {
+          transform: scale(25px);
+          background-color: rgb(112, 1, 27);
+        }
+        100% {
+          transform: translate(300px);
+          background-color: rgb(134, 2, 28);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+    <div class="five"></div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition</title>
+    <style>
+      * {
+        padding: 10px;
+        margin: 10px;
+        box-sizing: border-box;
+      }
+      div {
+        width: 150px;
+        height: 150px;
+        text-align: center;
+      }
+      div:hover {
+        transform: translate(200px);
+        border-radius: 100%;
+      }
+      .one {
+        background: aqua;
+        transition: all 3s ease;
+      }
+      .two {
+        background: aquamarine;
+        transition: all 3s linear;
+      }
+      .three {
+        background: rgb(4, 154, 154);
+        transition: all 3s ease-out;
+      }
+      .four {
+        background: rgb(32, 252, 178);
+        transition: all 3s ease-in-out;
+      }
+      .five {
+        background: rgb(2, 78, 78);
+        transition: all 3s ease-in;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">ease</div>
+    <div class="two">linear</div>
+    <div class="three">ease-out</div>
+    <div class="four">ease-in-out</div>
+    <div class="five">ease-in</div>
+  </body>
+</html>

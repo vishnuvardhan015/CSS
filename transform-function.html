@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform-Function</title>
+    <style>
+      * {
+        margin: 10px;
+        padding: 15px;
+        box-sizing: border-box;
+      }
+      div {
+        width: 150px;
+        height: 150px;
+      }
+      .one {
+        background-color: aqua;
+        transform: translate(30px, 40px);
+        transform: rotate(35deg);
+        transform: scale(0.5);
+        transform: skew(25deg);
+      }
+      .two {
+        background: green;
+        transform: translateX(30px, 40px);
+        transform: rotateX(35deg);
+        transform: scaleX(0.5);
+        transform: skewX(25deg);
+      }
+      .three {
+        background: aquamarine;
+        transform: translateY(30px, 40px);
+        transform: rotateY(35deg);
+        transform: scaleY(0.5);
+        transform: skewY(25deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before After od pesuco elements</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      p {
+        background: yellowgreen;
+        color: black;
+      }
+      p::before {
+        content: "Dagumati Vishnuvardhan Reddy";
+        background-color: aqua;
+        color: brown;
+        display: block;
+      }
+      p::after {
+        content: "Dagumati Vishnuvardhan Reddy";
+        background-color: aqua;
+        color: brown;
+        display: block;
+      }
+      div {
+        width: 60vw;
+        margin: 100px auto;
+        position: relative;
+      }
+      img {
+        width: 50%;
+        display: block;
+        border: rgb(255, 0, 0) 5px solid;
+      }
+
+      div::before {
+        content: " ";
+        width: 50%;
+        height: 50%;
+        border: rgb(255, 0, 102) 5px solid;
+        position: absolute;
+        top: -30px;
+        left: -30px;
+        z-index: -1;
+      }
+      div::after {
+        content: " ";
+        width: 50%;
+        height: 50%;
+        border: rgb(255, 0, 102) 5px solid;
+        position: absolute;
+        top: -60px;
+        left: -60px;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis
+      inventore, unde eius quis quidem voluptas adipisci neque eos repudiandae,
+      omnis, illum alias sed aspernatur impedit!
+    </p>
+    <div class="one">
+      <img src="./Images/img.jpg" alt="" />
+    </div>
+  </body>
+</html>

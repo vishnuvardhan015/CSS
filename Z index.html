@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-Index</title>
+    <style>
+      body {
+        background: rgb(0, 0, 0);
+      }
+      .section {
+        position: relative;
+      }
+      img {
+        position: absolute;
+        padding: 10px;
+        border: red solid 5px;
+        width: 300px;
+      }
+      .one {
+        top: 0;
+        left: 0%;
+        z-index: 1;
+      }
+      .two {
+        top: 20%;
+        left: 20%;
+      }
+      .three {
+        top: 40%;
+        left: 40%;
+      }
+      .four {
+        top: 60%;
+        left: 60%;
+      }
+      .five {
+        top: 80%;
+        left: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section">
+      <img src="./Images/img.jpg" class="one" />
+      <img src="./Images/img1.jpg" class="two" />
+      <img src="./Images/img2.jpg" class="three" />
+      <img src="./Images/img3.jpg" class="four" />
+      <img src="./Images/img4.jpg" class="five" />
+    </div>
+  </body>
+</html>
